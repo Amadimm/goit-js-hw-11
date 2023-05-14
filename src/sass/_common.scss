@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #cbd9db;
+    background-color: coral;
 }
 
 input {
@@ -67,7 +67,7 @@ button[type='submit']:hover {
     margin: 0 auto 20px auto;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    background-color: rgb(120, 133, 170);
+    background-color: coral;
     color: black;
 }
 
@@ -135,4 +135,20 @@ button[type='submit']:hover {
 
 .is-hidden {
     display: none;
+}
+
+#to-top {
+    background: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    height: 60px;
+    width: 60px;
+}
+
+#to-top img {
+    width: 50px;
+    height: 50px;
 }

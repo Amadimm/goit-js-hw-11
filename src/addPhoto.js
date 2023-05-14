@@ -1,6 +1,5 @@
 export const drawPhoto = pictures => {
-  return pictures.data.hits
-    .map(
+  return pictures.data.hits.map(
       picture =>
         `
     <div class="photo-card border rounded shadow-lg">

@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <div class="form-wrapper">
-      <form class="search-form" id="search-form">
-        <input
-          type="text"
-          name="searchQuery"
-          autocomplete="off"
-          placeholder="Search images..."
-        />
-        <button class="search-button" type="submit">Search</button>
-      </form>
-    </div>
 
-    <div class="wrapper">
-      <div class="gallery"></div>
-      <button type="button" class="load-more is-hidden">Load more</button>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page title</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+</head>
+
+<!-- <body>
+  <div
+    <form  id="search-form">
+      <div class="relative">
+        <input type="text" name="searchQuery" autocomplete="off"
+          class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Search images..." required>
+        <button type="submit"
+          class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+      </div>
+    </form>
+  </div>
+  <div class="gallery flex flex-wrap gap-6 justify-center max-w-screen-2xl m-auto">
+  </div>
+  <div class="text-center mt-5">
+    <button type="button"
+      class="load-more text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-28 py-2.5 text-center mr-2 mb-2">Load
+      more</button>
+  </div>
+
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html> -->
+<body>
+
+  <div
+    class="bg-gradient-to-br from-green-400 to-blue-600 dark:bg-gradient-to-br dark:from-purple-600 dark:to-blue-500 mb-5">
+    <form class="search-form w-[50%] m-auto p-3" id="search-form">
+      <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"></label>
+      <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+         
+        </div>
+        <input type="text" name="searchQuery" autocomplete="off"
+          class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Search images..." required>
+        <button type="submit"
+          class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="gallery flex flex-wrap gap-6 justify-center max-w-screen-2xl m-auto">
+    <!-- Obraz karty -->
+  </div>
+
+  <div class="text-center mt-5">
+    <button type="button"
+      class="load-more text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-28 py-2.5 text-center mr-2 mb-2">Load
+      more</button>
+  </div>
+
+  <script type="module" src="./index.js"></script>
+</body>
+
 </html>
